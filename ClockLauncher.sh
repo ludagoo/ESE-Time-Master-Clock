@@ -1,6 +1,6 @@
 #!/bin/sh
 # ClockLauncher.sh
-# navigate to home directory, then to this directory, then execute python script, then back home
+# navigate to home directory, then to /home/pi/ESE-Time-Master-Clock directory, then execute python script
 
 sudo pigpiod
-sudo python /home/pi/Clock/NTPClock.py
+sudo python /home/pi/ESE-Time-Master-Clock/NTPClock.py
