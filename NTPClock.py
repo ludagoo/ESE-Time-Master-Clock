@@ -11,196 +11,196 @@ serialData=[]
 def convertToTwoBinary(number):
 
 	if number == 0:
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 	elif number == 1:
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 
 def convertToThreeBinary(number):
 	if number == 0:
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 
 	elif number == 1:
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 	elif number == 2:
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 	elif number == 3:
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 	elif number == 4:
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 	elif number == 5:
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 
 def convertToFourBinary(number):
 	if number == 0:
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 	elif number == 1:
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 	elif number == 2:
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 	elif number == 3:
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 	elif number == 4:
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 	elif number == 5:
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 	elif number == 6:
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 	elif number == 7:
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 	elif number == 8:
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 	elif number == 9:
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 		
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 
 def update():
 	currentTime = datetime.datetime.now()
@@ -213,22 +213,22 @@ def update():
 	#HOURS
 	if hour >= 12:
 		#PM
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 	
-		serialData.append(pigpio.pulse(1<<20, 0, 240))
-		serialData.append(pigpio.pulse(0, 1<<20, 65))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 240))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 65))
 	
 		if hour > 12:
 			#Convert 24hr to 12hr
 			hour = hour - 12
 	else:
 		#AM
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 	
-		serialData.append(pigpio.pulse(1<<20, 0, 65))
-		serialData.append(pigpio.pulse(0, 1<<20, 240))
+		serialData.append(pigpio.pulse(1<<clockPin, 0, 65))
+		serialData.append(pigpio.pulse(0, 1<<clockPin, 240))
 
 
 	if hour >= 10:
